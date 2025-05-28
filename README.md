@@ -147,7 +147,7 @@ M3D-FB has built-in tools for generating tables and plots to report and visualiz
 * `PerSubjectMetaEvaluator`: Plots the true vs. estimated error for each subject of a dataset, with a different color for each reconstruction methods; and reports the rate of inconsistency for the estimator
 
 <p align="center">
-	<img src="https://github.com/sariyanidi/3Dfacebenchmark/assets/7074238/0157acd8-509c-4bbf-a525-c5173e3f82bc" width="800">
+	<img src="info/reports.png" width="800">
 </p>
 
 All these reporters are implemented with a class derived from `BaseReporter`. Users can extend the latter to produce their own reporting easily, as the `BaseReporter` class takes care of boilerplate code.
