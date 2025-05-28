@@ -1,0 +1,13 @@
+{
+    "reporter_type": "ResultsTable",
+    "reporter_opts": {"weight_threshold": 0.001, "divide_error_by": 1e-3, "divide_gmeshes_by": 1e+6, "num_subjects": 5},
+    "rec_methods": [
+        "BFM/3DIv2-m",
+        "BFM/Deep3DFace-m",
+        "BFM/INORig-m",
+        "BFM/3DDFAv2-m"
+    ],
+    "mms_info": {"BFM": "info/BFM-p23470.json"},
+    "error_computers": ["info/error_computers/known.json", "info/error_computers/E01.json","info/error_computers/E12.json"],
+    "dataset": {"name": "BFMsynth", "is_synthetic": true}
+}

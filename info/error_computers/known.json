@@ -1,0 +1,17 @@
+{
+    "name": "True",
+    "rigid_aligner": {
+        "type": "LandmarkBasedRigidAligner",
+        "opts": {"ref_lmk_indices": [13, 19, 28, 31, 37]}
+    },
+    "nonrigid_aligner": null,
+    "distance_computer": {
+        "type": "DenseP2PDistance",
+        "opts": {}
+    },
+    "corr_establisher": {
+        "type": "IdentityCorrespondence",
+        "opts": {}
+    },
+    "corrector": null
+}

@@ -1,0 +1,1 @@
+{"name": "E1", "rigid_aligner": {"type": "ICPRigidAligner", "opts": {}}, "nonrigid_aligner": null, "distance_computer": {"type": "DenseP2PDistance", "opts": {}}, "corr_establisher": {"type": "ChamferCorrespondence", "opts": {}}, "corrector": null}

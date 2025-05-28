@@ -1,0 +1,1 @@
+{"name": "E12", "rigid_aligner": {"type": "LandmarkBasedRigidAligner", "opts": {}}, "nonrigid_aligner": {"type": "LandmarkBasedElasticAligner", "opts": {"gamma": 1.0}}, "distance_computer": {"type": "DenseP2PDistance", "opts": {}}, "corr_establisher": {"type": "ChamferCorrespondence", "opts": {}}, "corrector": {"type": "TopologyConsistencyCorrector", "opts": {}}}

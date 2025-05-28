@@ -1,0 +1,6 @@
+numpy
+cvxpy
+matplotlib
+scikit-learn
+open3d
+trimesh

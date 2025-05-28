@@ -1,0 +1,7 @@
+from .error_computer import ErrorComputer
+
+from .rigid_aligners import LandmarkBasedRigidAligner, ICPRigidAligner
+from .nonrigid_aligners import LandmarkBasedElasticAligner, NonrigidICPAligner
+from .corr_establishers import ChamferCorrespondence, IdentityCorrespondence
+from .correctors import TopologyConsistencyCorrector
+from .distance_computers import DenseP2PDistance, LandmarksDistance, DenseP2TriDistance

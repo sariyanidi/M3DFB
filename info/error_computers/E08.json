@@ -1,0 +1,1 @@
+{"name": "E8", "rigid_aligner": {"type": "ICPRigidAligner", "opts": {}}, "nonrigid_aligner": {"type": "NonrigidICPAligner", "opts": {"epsilon": 0.01, "prealign_ELR": 1}}, "distance_computer": {"type": "DenseP2PDistance", "opts": {}}, "corr_establisher": {"type": "ChamferCorrespondence", "opts": {}}, "corrector": {"type": "TopologyConsistencyCorrector", "opts": {}}}
