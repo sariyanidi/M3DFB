@@ -43,12 +43,12 @@ if src.shape[1] != 3:
     sys.exit(1)
 
 if args.srcmesh_type == 'BFM-53490' and args.dstmesh_type == 'BFM-23470':
-    ix = np.loadtxt('info/idxs/ix_23470_relative_to_53490.txt').astype(int)
+    ix = np.loadtxt('idxs/ix_23470_relative_to_53490.txt').astype(int)
     dst = src[ix,:]
 elif args.srcmesh_type == 'BFM-53215' and args.dstmesh_type == 'BFM-23470':
     src_full = np.zeros((53490, 3))
     
-    ix53215 = np.loadtxt('info/idxs/ix_53215_relative_to_53490.txt').astype(int)
+    ix53215 = np.loadtxt('idxs/ix_53215_relative_to_53490.txt').astype(int)
     src_full[ix53215,:] = src
 
     ix23470 = np.loadtxt('idxs/ix_23470_relative_to_53490.txt').astype(int)
