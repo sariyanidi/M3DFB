@@ -2,7 +2,7 @@
 
 A python framework for computing 3D face reconstruction.
 <p align="center">
-	<img src="https://github.com/sariyanidi/3Dfacebenchmark/assets/7074238/2099cfa1-c637-4117-a545-b1a06e3eec64" width="800">
+	<img src="info/framework.jpg" width="800">
 </p>
 
 Features of the framework are:
