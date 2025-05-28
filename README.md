@@ -163,7 +163,7 @@ All reconstructed meshes and ground truth scans for a dataset are expected to be
 The reconstructed meshes are expected to be listed in a nested directory, structured to specify the mesh topology (e.g., BFM or FLAME) used by the reconstruction method; and the cropping that is used (e.g., the 23,470-point version of BFM) during experiments. For example, the reconstructed mesh for the first subject of the Florence dataset obtained with the 3DDFAv2 method is to be listed at:
 * DATA\_DIR/Florence/Rmeshes/BFM/p23470/3DDFAv2/id0001.txt
 
-A [Python script](face_benchmark/utils/convert_mesh.py) is provided to allow users crop reconstructed meshes according to the version of BFM with the 23,470 points.
+A [Python script](facebenchmark/utils/convert_mesh.py) is provided to allow users crop reconstructed meshes according to the version of BFM with the 23,470 points.
 
 
 
