@@ -84,7 +84,7 @@ class LandmarkBasedElasticAligner(BaseNonrigidAligner):
         prob = cp.Problem(objective, constraints)
         
         # The optimal objective value is returned by `prob.solve()`.
-        result = prob.solve(solver='ECOS')
+        result = prob.solve(solver='SCS',warm_start=True)
         # The optimal value for x is stored in `x.value`.
         # print(x.value)
         # The optimal Lagrange multiplier for a constraint is stored in

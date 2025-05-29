@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import os
+import multiprocessing as mp
+
 import json
 import argparse
 
@@ -12,7 +14,7 @@ parser.add_argument('--num_processes', type=int, default=1)
 
 args = parser.parse_args()
 
-avail_processes = min(len(os.sched_getaffinity(0)), args.num_processes)
+avail_processes = min(mp.cpu_count(), args.num_processes)
 if args.num_processes > avail_processes:
     print(f'Warning: reducing the number of processes to {avail_processes}')
     args.num_processes = avail_processes 
@@ -40,5 +42,5 @@ reporter = reporter_class(experiment['dataset'], error_computers,
                           num_processes=args.num_processes,
                           use_cache=True,
                           opts=reporter_opts)
-
-reporter.produce()
+if __name__ == '__main__':
+    reporter.produce()
